@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 export default function Cart(){
+  
     
  
     let [cart,setCart]=useState(localStorage.getItem('cart')!=undefined ? JSON.parse(localStorage.getItem('cart')):[])
     let [productCheck,setProductCheck]=useState({})
+    
     let deleteFromCart = (id)=>{
         let newCart = cart.filter(p=>p.idP!==id)
         setCart(newCart)
@@ -85,7 +87,7 @@ export default function Cart(){
                 <h1>#PANIER</h1>
         
             </div>
-            <div className="container mt-3">
+            {cart.length>0? <div className="container mt-3">
            <table className="table text-center table-borderless" style={{borderBottom:"2px solid lightgray"}}>
             <thead>
                 <tr style={{borderTop:" 1px solid lightgray",borderBottom :"1px solid lightgray"}}>
@@ -140,7 +142,8 @@ export default function Cart(){
            </div>
 
           
-        </div>
+        </div>:<h1 className="text-center mt-3 ">le panier est vide </h1>}
+           
         </>
        
     )

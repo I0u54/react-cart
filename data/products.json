@@ -55,7 +55,36 @@
       "quantity": 3,
       "prix": 120,
       "image": "a8.jpg"
+    },
+     {
+      "id": 9,
+      "title": "T-shirt Marvel",
+      "quantity": 10,
+      "prix": 120,
+      "image": "a9.jpg"
+    },
+    {
+      "id": 10,
+      "title": "T-shirt Jordan",
+      "quantity": 7,
+      "prix": 120,
+      "image": "a10.jpg"
+    },
+    {
+      "id": 11,
+      "title": "T-shirt Metalica",
+      "quantity": 9,
+      "prix": 120,
+      "image": "a11.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Jean Jacket",
+      "quantity": 3,
+      "prix": 400,
+      "image": "a15.jpg"
     }
+  
   ]
  
 }
